@@ -8,16 +8,15 @@
     <artifactId>project-pet-clinic</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-
     <modules>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
     </modules>
 
     <packaging>pom</packaging>
+
     <name>project-pet-clinic</name>
     <description>Project for Spring Boot</description>
-
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -32,18 +31,25 @@
         <java.version>1.8</java.version>
     </properties>
 
-    <dependencies>
-
-    </dependencies>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+    <scm>
+        <developerConnection>scm:git:git@github.com:alexander8buga/Pet-clinic-Nov.git</developerConnection>
+    </scm>
 
 
 </project>
