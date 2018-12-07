@@ -1,13 +1,11 @@
-package springframework.projectpetclinic.model;
-
-import sun.lwawt.LWWindowPeer;
+package springFramework.petClinic.model;
 
 import java.time.LocalDate;
 
 public class Pet {
 
     private PetType petType;
-    private Owner owner;
+    private  Owner owner;
     private LocalDate birthday;
 
     public LocalDate getBirthday() {
