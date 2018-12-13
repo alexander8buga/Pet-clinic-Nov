@@ -6,19 +6,19 @@ import springFramework.petClinic.model.Owner;
 import springFramework.petClinic.model.Vet;
 import springFramework.petClinic.services.OwnerService;
 import springFramework.petClinic.services.VetService;
-import springFramework.petClinic.services.map.OwnerServiceMap;
-import springFramework.petClinic.services.map.VetServiceMap;
 
+/**
+ * Created by ab on 12/13/18
+ */
 @Component
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private  final VetService vetService;
 
-    public DataLoader(){
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
-
+    public DataLoader(OwnerService ownerService, VetService vetService){
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
