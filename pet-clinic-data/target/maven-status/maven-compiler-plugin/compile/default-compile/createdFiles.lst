@@ -1,0 +1,9 @@
+springFramework/petClinic/model/BaseEntity.class
+springFramework/petClinic/services/VetService.class
+springFramework/petClinic/services/OwnerService.class
+springFramework/petClinic/services/PetService.class
+springFramework/petClinic/model/PetType.class
+springFramework/petClinic/model/Person.class
+springFramework/petClinic/model/Pet.class
+springFramework/petClinic/model/Owner.class
+springFramework/petClinic/model/Vet.class
