@@ -9,9 +9,11 @@
 
 <table class="table table-striped">
     <thread>
-        <tr style="width: 200px;">Id</tr>
-        <tr style="width: 200px;">First Name</tr>
-        <tr style="width: 200px;">Last Name</tr>
+        <tr>
+            <th style="width: 200px;">Id</th>
+            <th style="width: 200px;">First Name</th>
+            <th style="width: 200px;">Last Name</th>
+        </tr>
     </thread>
     <tbody>
         <tr th:each="owner : ${owners}">
