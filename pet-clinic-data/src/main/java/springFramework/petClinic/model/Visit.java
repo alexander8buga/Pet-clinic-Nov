@@ -1,14 +1,12 @@
 package springFramework.petClinic.model;
 
-import org.springframework.context.annotation.Description;
-
 import java.time.LocalDate;
 
 public class Visit extends BaseEntity {
 
     private LocalDate localDate;
     private Pet pet;
-    private Description description;
+    private String description;
 
 
     public LocalDate getLocalDate() {
@@ -27,11 +25,11 @@ public class Visit extends BaseEntity {
         this.pet = pet;
     }
 
-    public Description getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(Description description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 }
