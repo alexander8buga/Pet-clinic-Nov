@@ -6,7 +6,7 @@
 
     <groupId>springframework</groupId>
     <artifactId>project-pet-clinic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
