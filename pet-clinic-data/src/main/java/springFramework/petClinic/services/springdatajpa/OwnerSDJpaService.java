@@ -4,9 +4,6 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import springFramework.petClinic.model.Owner;
 import springFramework.petClinic.repositories.OwnerRepo;
-import springFramework.petClinic.repositories.PetRepo;
-import springFramework.petClinic.repositories.PetTypeRepo;
-import springFramework.petClinic.repositories.VetRepo;
 import springFramework.petClinic.services.OwnerService;
 
 import java.util.HashSet;
@@ -17,16 +14,9 @@ import java.util.Set;
 public class OwnerSDJpaService  implements OwnerService {
 
     private final OwnerRepo ownerRepo;
-    private final PetRepo petRepo;
-    private final VetRepo vetRepo;
-    private final PetTypeRepo petTypeRepo;
 
-    public OwnerSDJpaService(OwnerRepo ownerRepo, PetRepo petRepo,
-                             VetRepo vetRepo, PetTypeRepo petTypeRepo) {
+    public OwnerSDJpaService(OwnerRepo ownerRepo) {
         this.ownerRepo = ownerRepo;
-        this.petRepo = petRepo;
-        this.vetRepo = vetRepo;
-        this.petTypeRepo = petTypeRepo;
     }
 
     public Owner findByLastName(String lastName){
