@@ -9,6 +9,7 @@ import java.io.Serializable;
 /**
  * Created by ab on 12/21/2018
  */
+//MappedSuperclass means the object is not going to be created in DB
 @MappedSuperclass
 public class BaseEntity implements Serializable {
     @Id
