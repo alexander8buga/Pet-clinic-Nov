@@ -1,6 +1,7 @@
 package springFramework.petClinic.services.map;
 
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import springFramework.petClinic.model.Visit;
 import springFramework.petClinic.services.VisitService;
@@ -11,6 +12,7 @@ import java.util.Set;
  * Created by ab on 12/21/18
  */
 @Service
+@Profile({"default", "map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override
@@ -34,11 +36,12 @@ public class VisitMapService extends AbstractMapService<Visit, Long> implements 
 
     @Override
     public void delete(Visit object) {
+        super.delete(object);
 
     }
 
     @Override
     public void deleteById(Long id) {
-
+        super.deleteById(id);
     }
 }

@@ -36,7 +36,7 @@ public class VisitSDJpaService  implements VisitService {
 
     @Override
     public Visit save(Visit visit) {
-        return save(visit);
+        return visitRepo.save(visit);
     }
 
     @Override
