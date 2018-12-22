@@ -1,5 +1,7 @@
 package springFramework.petClinic.model;
 
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
@@ -7,6 +9,11 @@ import java.util.Set;
 /**
  * Create by ab on 12/21/2018
  */
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
 @Table(name="vets")
 public class Vet extends Person {
@@ -22,7 +29,4 @@ public class Vet extends Person {
         return specialties;
     }
 
-    public void setSpecialties(Set<Specialty> specialties) {
-        this.specialties = specialties;
-    }
 }
