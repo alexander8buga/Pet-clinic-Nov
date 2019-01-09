@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: pet-clinic-web
+Implementation-Version: 0.0.2-SNAPSHOT
+Built-By: alexandrbuga
+Implementation-Vendor-Id: springframework
+Build-Jdk: 1.8.0_144
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/project-pet-clinic/pet-clinic-web
+Created-By: Maven Integration for Eclipse
+

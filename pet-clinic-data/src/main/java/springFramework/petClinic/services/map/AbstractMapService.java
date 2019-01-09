@@ -1,6 +1,7 @@
 package springFramework.petClinic.services.map;
 
 import springFramework.petClinic.model.BaseEntity;
+import springFramework.petClinic.model.Owner;
 
 import java.util.*;
 
@@ -51,5 +52,6 @@ public abstract class AbstractMapService<T extends BaseEntity, ID extends Long> 
 
         return nextId;
     }
+    
 }
 
